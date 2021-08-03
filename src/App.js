@@ -29,6 +29,8 @@ import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import './App.scss';
 import { Login } from './pages/Login';
+import {  Categories } from './pages/Categories';
+
 
 const App = () => {
 
@@ -79,6 +81,18 @@ const App = () => {
                 { label: 'Access Denied', icon: 'pi pi-fw pi-ban', to: '/access' },
                 { label: 'Empty', icon: 'pi pi-fw pi-clone', to: '/empty' }
             ]
+        },
+        {
+            
+            label: 'Users', icon: 'pi pi-fw pi-users',
+            items:
+            [
+                { label: 'Admin', icon: 'pi pi-fw pi-users',items:[{label:'Categories',to:'/Categories'}]},
+                { label: 'Seller', icon: 'pi pi-fw pi-users' },
+                { label: 'Buyer', icon: 'pi pi-fw pi-users' },
+                { label: 'Delivery ', icon: 'pi pi-fw pi-users'},
+            ]
+              
         },
     ];
 
