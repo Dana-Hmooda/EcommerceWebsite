@@ -1,14 +1,16 @@
 import React from 'react'
-import {List,Datagrid,TextField,DateField,EditButton,DeleteButton} from 'react-admin'
+import {List,Datagrid,TextField,EditButton,DeleteButton} from 'react-admin'
 const userlist = (props) =>{
     return(
         <List {...props}>
             <Datagrid>
                 <TextField source='id'/>
-                <TextField source='title'/>
-                <DateField source='publishedat'/>
-                <EditButton basePath='/admin'/>
-                <DeleteButton basePath='/admin'/>
+                <TextField source='name'/>
+                <TextField source='parentID'/>
+                <TextField source='userID'/>
+                <TextField source='status'/>
+                <EditButton basePath='/category'/>
+                <DeleteButton basePath='/category'/>
             </Datagrid>
         </List>
     )

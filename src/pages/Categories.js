@@ -10,8 +10,8 @@ export const Categories = () => {
             <div className="card">
                 <h5>Admin page </h5>
                 <p>Welcome in Adminstrater page </p>
-                <Admin dataProvider={restProvider('https://localhost:5001/api/Get Users')}>
-                <Resource name='Users' list={userlist}/>
+                <Admin dataProvider={restProvider('https://localhost:5001/api/category')}>
+                <Resource name='Categories' list={userlist}/>
             </Admin>
             </div>
         </div>
