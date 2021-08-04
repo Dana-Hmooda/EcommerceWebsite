@@ -111,6 +111,7 @@ const App = () => {
         { path: '/invoice', component: Invoice },
         { path: '/help', component: Help },
         { path: '/empty', component: EmptyPage },
+        { path: '/Categories', component: Categories },
     ];
 
     let topbarItemClick;
