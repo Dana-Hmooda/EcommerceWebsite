@@ -1,6 +1,6 @@
 import React from 'react'
 import {List,Datagrid,TextField,EditButton,DeleteButton} from 'react-admin'
-const userlist = (props) =>{
+const categorylist = (props) =>{
     return(
         <List {...props}>
             <Datagrid>
@@ -15,4 +15,4 @@ const userlist = (props) =>{
         </List>
     )
 }
-export  default userlist
+export  default categorylist

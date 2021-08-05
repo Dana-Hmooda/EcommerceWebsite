@@ -1,7 +1,7 @@
 import React from 'react';
 import { Admin, Resource } from 'react-admin';
-import restProvider from 'ra-data-simple-rest';
-import userlist from '../components/userlist';
+import jsonServerProvider from 'ra-data-simple-rest';
+import categorylist from '../components/categorylist';
 export const Categories = () => {
      
     return ( 
@@ -10,8 +10,8 @@ export const Categories = () => {
             <div className="card">
                 <h5>Admin page </h5>
                 <p>Welcome in Adminstrater page </p>
-                <Admin dataProvider={restProvider('https://localhost:5001/api/category')}>
-                <Resource name='Categories' list={userlist}/>
+                <Admin dataProvider={jsonServerProvider('https://localhost:5000/api/category')}>
+                <Resource name='Categories' list={categorylist}/>
             </Admin>
             </div>
         </div>

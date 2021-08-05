@@ -1,6 +1,6 @@
 {
     "name": "roma-react",
-    "proxy":"https://localhost:5001",
+    "proxy":"https://localhost:5000",
     "version": "6.0.0",
     "homepage": ".",
     "private": true,
