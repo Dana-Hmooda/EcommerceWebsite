@@ -29,7 +29,7 @@ import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import './App.scss';
 import { Login } from './pages/Login';
-import {  Categories } from './pages/Categories';
+
 
 
 const App = () => {
@@ -111,7 +111,7 @@ const App = () => {
         { path: '/invoice', component: Invoice },
         { path: '/help', component: Help },
         { path: '/empty', component: EmptyPage },
-        { path: '/Categories', component: Categories },
+       
     ];
 
     let topbarItemClick;
