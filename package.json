@@ -1,6 +1,6 @@
 {
     "name": "roma-react",
-    "proxy":"https://localhost:5000",
+    "proxy":"https://localhost:5001",
     "version": "6.0.0",
     "homepage": ".",
     "private": true,
@@ -32,7 +32,7 @@
         "react-transition-group": "^4.4.1"
     },
     "scripts": {
-        "server": "json-server --watch db.json --port 5000",
+        "server": "json-server --watch db.json --port 5001 --middlewares ./range.js",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",

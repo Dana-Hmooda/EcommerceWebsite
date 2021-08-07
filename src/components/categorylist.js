@@ -5,10 +5,10 @@ const categorylist = (props) =>{
         <List {...props}>
             <Datagrid>
                 <TextField source='id'/>
-                <TextField source='name'/>
+                <TextField source='الاسم'/>
                 <TextField source='parentID'/>
                 <TextField source='userID'/>
-                <TextField source='status'/>
+                <TextField source='الحالة'/>
                 <EditButton basePath='/category'/>
                 <DeleteButton basePath='/category'/>
             </Datagrid>
